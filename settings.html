@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Настройки</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__information">
+                <div class="wrapper">
+                    <div class="header__message">
+                        <a href="#">
+                            <img src="assets/img/message.svg" alt="message">
+                        </a>
+                    </div>
+                    <div class="header__notification">
+                        <a href="#">
+                            <img src="assets/img/notificaiton.svg" alt="notification">
+                        </a>
+                    </div>
+                    <div class="header__user">
+                        <div class="wrapper">
+                            <div class="username">
+                                <p>Иван Иванов</p>
+                            </div>
+                            <div class="user__img">
+                                <a href="#">
+                                    <img src="assets/img/user.png" alt="user">
+                                </a>
+                            </div>
+                            <div class="user__dropdown">
+                                <button id="dropdownButton">
+                                    <img src="assets/img/down-arrow.svg" alt="down-arrow">
+                                </button>
+                                <div class="dropdown__block">
+                                    <div class="dropdown__item">
+                                        <a href="wallet.html"><img src="assets/img/wallet.svg" alt=""> Кошелёк</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a href="#.html"><img src="assets/img/power.svg" alt=""> Выйти</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobile">
+                <div class="wrapper">
+                    <div class="user">
+                        <a href="#">
+                            <img src="assets/img/mobile-user.png" alt="">
+                        </a>
+                    </div>
+                    <div class="down__button">
+                        <button id="mobileButton">
+                            <img src="assets/img/down-arrow.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="logout__block">
+                        <a href="#"><img src="assets/img/power.svg" alt=""> Выйти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile__block">
+            <div class="wrapper">
+                <div class="mobile__nav">
+                    <div class="nav__item">
+                        <a href="index.html">Главная</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="programs.html">Программы</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="#">Статистика</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="wallet.html">Кошелёк</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="settings.html">Настройки</a>
+                    </div>
+                </div>
+                <div class="mobile__functions">
+                    <div class="notification">
+                        <a href="#">
+                            <img src="assets/img/notificaiton.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="message">
+                        <a href="#">
+                            <img src="assets/img/message.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="wrapper">
+                <div class="breadcrumbs__item">
+                    <a href="index.html">Главная <span>/</span></a>
+                </div>
+                <div class="breadcrumbs__item">
+                    <a href="programs.html">Программы <span>/</span></a>
+                </div>
+                <div class="breadcrumbs__item">
+                    <a href="#">Статистика <span>/</span></a>
+                </div>
+                <div class="breadcrumbs__item">
+                    <a href="wallet.html">Кошелёк <span>/</span></a>
+                </div>
+                <div class="breadcrumbs__item">
+                    <a href="settings.html">Настройки</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="settings">
+        <div class="container">
+            <div class="wrapper">
+                <div class="settings__account">
+                    <div class="settings__name">
+                        <p>Аккаунт</p>
+                    </div>
+                    <div class="settings__form">
+                        <form action="">
+                            <div class="input">
+                                <input type="text" placeholder="Иван Иванов" required>
+                            </div>
+                            <div class="input">
+                                <input type="email" placeholder="email@traficcapital.com" required>
+                            </div>
+                            <div class="input input-telephone">
+                                <input type="tel" placeholder="+38 (067) 999 88 77" required>
+                            </div>
+                            <div class="input">
+                                <input type="password" placeholder="Введите новый пароль" required>
+                            </div>
+                            <div class="input">
+                                <input type="password" placeholder="Повторите новый пароль" required>
+                            </div>
+                            <div class="photo__button">
+                                <button>Загрузить фото <img src="assets/img/download-button.svg" alt=""></button>
+                            </div>
+                            <div class="delete__account">
+                                <a href="#">Удалить аккаунт</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="settings__pay">
+                    <div class="settings__name">
+                        <p>Платежные данные</p>
+                    </div>
+                    <div class="pay__form">
+                        <form action="">
+                            <div class="pay__select">
+                                <select name="" id="">
+                                    <option value="0">Карта / счет банка / электронный кошелек</option>
+                                    <option value="card">Карта</option>
+                                    <option value="account-bank">счет банка</option>
+                                    <option value="online-wallet">электронный кошелек</option>
+                                </select>
+                            </div>
+                            <div class="pay__warning">
+                                <p>В зависимости от этого разные поля заполнения</p>
+                            </div>
+                            <div class="card__input">
+                                <input type="text" placeholder="Введите карту">
+                            </div>
+                            <div class="account__bank">
+                                <div class="input">
+                                    <input type="text" placeholder="Введите">
+                                </div>
+                                <div class="input">
+                                    <input type="text" placeholder="Введите">
+                                </div>
+                            </div>
+                            <div class="online__wallet">
+                                <div class="input">
+                                    <input type="text" placeholder="Введите">
+                                </div>
+                                <div class="input">
+                                    <input type="text" placeholder="Введите">
+                                </div>
+                                <div class="input">
+                                    <input type="text" placeholder="Введите">
+                                </div>
+                            </div>
+                            <div class="pay__button">
+                                <button>Добавить платежный метод <img src="assets/img/download-button.svg"
+                                        alt=""></button>
+                            </div>
+                            <div class="delete__pay">
+                                <a href="#">Удалить платежные данные</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="settings__notification">
+                    <div class="settings__name">
+                        <p>Уведомления</p>
+                    </div>
+                    <div class="notification__button">
+                        <button>Подключить Telegram–бот <img src="assets/img/download-button.svg" alt=""></button>
+                    </div>
+                    <ul class="notification__list">
+                        <li>
+                            <img src="assets/img/check.svg" alt=""> Уведомления по E-mail
+                        </li>
+                        <li>
+                            <img src="assets/img/check.svg" alt=""> Уведомления по SMS
+                        </li>
+                        <li>
+                            <img src="assets/img/check.svg" alt=""> Уведомления в Telegram–бот
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="settings__security">
+                    <div class="settings__name">
+                        <p>Безопасность</p>
+                    </div>
+                    <div class="security__button">
+                        <button>Активировать 2AF–аутентификацию <img src="assets/img/download-button.svg"
+                                alt=""></button>
+                    </div>
+                    <div class="security__delete">
+                        <a href="#">Удалить двухфакторную авторизацию</a>
+                    </div>
+                </div>
+            </div>
+            <div class="save__button">
+                <button>Сохранить изменения <img src="assets/img/download-button.svg" alt=""></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

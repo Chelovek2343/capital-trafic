@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Главная ЛК</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__information">
+                <div class="wrapper">
+                    <div class="header__message">
+                        <a href="#">
+                            <img src="assets/img/message.svg" alt="message">
+                        </a>
+                    </div>
+                    <div class="header__notification">
+                        <a href="#">
+                            <img src="assets/img/notificaiton.svg" alt="notification">
+                        </a>
+                    </div>
+                    <div class="header__user">
+                        <div class="wrapper">
+                            <div class="username">
+                                <p>Иван Иванов</p>
+                            </div>
+                            <div class="user__img">
+                                <a href="#">
+                                    <img src="assets/img/user.png" alt="user">
+                                </a>
+                            </div>
+                            <div class="user__dropdown">
+                                <button id="dropdownButton">
+                                    <img src="assets/img/down-arrow.svg" alt="down-arrow">
+                                </button>
+                                <div class="dropdown__block">
+                                    <div class="dropdown__item">
+                                        <a href="wallet.html"><img src="assets/img/wallet.svg" alt=""> Кошелёк</a>
+                                    </div>
+                                    <div class="dropdown__item">
+                                        <a href="#.html"><img src="assets/img/power.svg" alt=""> Выйти</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobile">
+                <div class="wrapper">
+                    <div class="user">
+                        <a href="#">
+                            <img src="assets/img/mobile-user.png" alt="">
+                        </a>
+                    </div>
+                    <div class="down__button">
+                        <button id="mobileButton">
+                            <img src="assets/img/down-arrow.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="logout__block">
+                        <a href="#"><img src="assets/img/power.svg" alt=""> Выйти</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile__block">
+            <div class="wrapper">
+                <div class="mobile__nav">
+                    <div class="nav__item">
+                        <a href="index.html">Главная</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="programs.html">Программы</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="#">Статистика</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="wallet.html">Кошелёк</a>
+                    </div>
+                    <div class="nav__item">
+                        <a href="settings.html">Настройки</a>
+                    </div>
+                </div>
+                <div class="mobile__functions">
+                    <div class="notification">
+                        <a href="#">
+                            <img src="assets/img/notificaiton.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="message">
+                        <a href="#">
+                            <img src="assets/img/message.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="wrapper">
+                <div class="breadcrumbs__item">
+                    <a href="index.html">Главная <span>/</span></a>
+                </div>
+                <div class="breadcrumbs__item">
+                    <a href="programs.html">Программы <span>/</span></a>
+                </div>
+                <div class="breadcrumbs__item">
+                    <a href="#">Статистика <span>/</span></a>
+                </div>
+                <div class="breadcrumbs__item">
+                    <a href="wallet.html">Кошелёк <span>/</span></a>
+                </div>
+                <div class="breadcrumbs__item">
+                    <a href="settings.html">Настройки</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chart">
+        <div class="container">
+            <div class="wrapper">
+                <div class="chart__about">
+                    <div class="main__chart">
+                        <img src="assets/img/test-chart.png" alt="">
+                    </div>
+                    <div class="mobile__chart">
+                        <div class="mobile__chart-title">
+                            <p>Статистика за 30 дней</p>
+                        </div>
+                        <div class="chart__container">
+                            <div class="chart__item">
+                                <div class="wrapper">
+                                    <div class="month">
+                                        <div class="img">
+                                            <img src="assets/img/green-circle.svg" alt="">
+                                        </div>
+
+                                        <p>1 августа</p>
+                                    </div>
+                                    <div class="number">
+                                        <p>+$20000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart__item">
+                                <div class="wrapper">
+                                    <div class="month">
+                                        <div class="img">
+                                            <img src="assets/img/purple-circle.svg" alt="">
+                                        </div>
+
+                                        <p>7 августа</p>
+                                    </div>
+                                    <div class="number">
+                                        <p>+$234 (3%)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart__item">
+                                <div class="wrapper">
+                                    <div class="month">
+                                        <div class="img">
+                                            <img src="assets/img/purple-circle.svg" alt="">
+                                        </div>
+
+                                        <p>12 августа</p>
+                                    </div>
+                                    <div class="number">
+                                        <p>+$567 (12%)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart__item">
+                                <div class="wrapper">
+                                    <div class="month">
+                                        <div class="img">
+                                            <img src="assets/img/blue-circle.svg" alt="">
+                                        </div>
+
+                                        <p>19 августа</p>
+                                    </div>
+                                    <div class="number">
+                                        <p>+$1399 (27%)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart__item">
+                                <div class="wrapper">
+                                    <div class="month">
+                                        <div class="img">
+                                            <img src="assets/img/red-circle.svg" alt="">
+                                        </div>
+
+                                        <p>10 сентября</p>
+                                    </div>
+                                    <div class="number">
+                                        <p>-$15000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart__info">
+                        <div class="wrapper">
+                            <div class="chart__item">
+                                <div class="wrapper">
+                                    <div class="img">
+                                        <img src="assets/img/green-circle.svg" alt="">
+                                    </div>
+                                    <div class="item__text">
+                                        <p>Пополнение баланса</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart__item">
+                                <div class="wrapper">
+                                    <div class="img">
+                                        <img src="assets/img/purple-circle.svg" alt="">
+                                    </div>
+                                    <div class="item__text">
+                                        <p>Прибыль</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart__item">
+                                <div class="wrapper">
+                                    <div class="img">
+                                        <img src="assets/img/blue-circle.svg" alt="">
+                                    </div>
+                                    <div class="item__text">
+                                        <p>Ожидаемая прибыль</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart__item">
+                                <div class="wrapper">
+                                    <div class="img">
+                                        <img src="assets/img/red-circle.svg" alt="">
+                                    </div>
+                                    <div class="item__text">
+                                        <p>Вывод средств</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart__aside">
+                    <div class="chart__balance">
+                        <div class="chart__balance-top">
+                            <div class="wrapper">
+                                <div class="top__name">
+                                    <div class="wrapper">
+                                        <div class="img">
+                                            <img src="assets/img/wallet-balance.svg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <p>Баланс</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="top__chart">
+                                    <img src="assets/img/chart1.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart__balance-info">
+                            <div class="row">
+                                <div class="wrapper">
+                                    <div class="name">
+                                        <p>Текущий</p>
+                                    </div>
+                                    <div class="current__number">
+                                        <p><b>$24,500.06</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="wrapper">
+                                    <div class="name">
+                                        <p>Прибыль</p>
+                                    </div>
+                                    <div class="stonk__number">
+                                        <p><img src="assets/img/arrow-up.svg" alt=""> +45,74%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="wrapper">
+                                    <div class="name">
+                                        <p>Инвестировано</p>
+                                    </div>
+                                    <div class="invest__number">
+                                        <p>$5700</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart__balance-buttons">
+                            <div class="topup__button">
+                                <button>Пополнить <img src="assets/img/download-button.svg" alt=""></button>
+                            </div>
+                            <div class="withdraw__button">
+                                <button>Вывести <img src="assets/img/download-button.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart__aside-info">
+                        <div class="select__months">
+                            <select>
+                                <option value="1">Месяц</option>
+                                <option value="2">Год</option>
+                                <option value="3">День</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="wrapper">
+                                <div class="number">
+                                    <p>$13,43589</p>
+                                </div>
+                                <div class="chart__imgs">
+                                    <img src="assets/img/chart__aside1.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="wrapper">
+                                <div class="number">
+                                    <p>$13,43589</p>
+                                </div>
+                                <div class="chart__imgs">
+                                    <img src="assets/img/chart__aside2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="wrapper">
+                                <div class="number">
+                                    <p>$13,43589</p>
+                                </div>
+                                <div class="chart__imgs">
+                                    <img src="assets/img/chart__aside3.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="news__title">
+                <p>Новости</p>
+            </div>
+            <div class="news__inner">
+                <div class="news__item">
+                    <div class="wrapper">
+                        <div class="news__logo">
+                            <img src="assets/img/post__logo.svg" alt="">
+                        </div>
+                        <div class="news__info">
+                            <div class="news__title-post">
+                                <p>Мы заключили новое партнерство</p>
+                            </div>
+                            <div class="news__text-post">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh in nibh tellus in
+                                    senectus
+                                    mauris pretium mauris in. Et, a blandit amet, et at ac sit tempor. Tempor mauris
+                                    montes,
+                                    elit in justo vel tincidunt semper. Mauris quisque magna ac integer convallis.
+                                    Tincidunt
+                                    facilisis ac platea pellentesque leo massa placerat turpis. Tempus molestie nullam
+                                    leo
+                                    ultrices in faucibus. </p>
+                            </div>
+                            <div class="news__date-post">
+                                <p>1 августа 2022 г.</p>
+                            </div>
+                            <div class="news__link-post">
+                                <a href="post.html">Подробнее <img src="assets/img/download-button.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__item">
+                    <div class="wrapper">
+                        <div class="news__logo">
+                            <img src="assets/img/post__logo.svg" alt="">
+                        </div>
+                        <div class="news__info">
+                            <div class="news__title-post">
+                                <p>Мы заключили новое партнерство</p>
+                            </div>
+                            <div class="news__text-post">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh in nibh tellus in
+                                    senectus
+                                    mauris pretium mauris in. Et, a blandit amet, et at ac sit tempor. Tempor mauris
+                                    montes,
+                                    elit in justo vel tincidunt semper. Mauris quisque magna ac integer convallis.
+                                    Tincidunt
+                                    facilisis ac platea pellentesque leo massa placerat turpis. Tempus molestie nullam
+                                    leo
+                                    ultrices in faucibus. </p>
+                            </div>
+                            <div class="news__date-post">
+                                <p>1 августа 2022 г.</p>
+                            </div>
+                            <div class="news__link-post">
+                                <a href="post.html">Подробнее <img src="assets/img/download-button.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__item">
+                    <div class="wrapper">
+                        <div class="news__logo">
+                            <img src="assets/img/post__logo.svg" alt="">
+                        </div>
+                        <div class="news__info">
+                            <div class="news__title-post">
+                                <p>Мы заключили новое партнерство</p>
+                            </div>
+                            <div class="news__text-post">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh in nibh tellus in
+                                    senectus
+                                    mauris pretium mauris in. Et, a blandit amet, et at ac sit tempor. Tempor mauris
+                                    montes,
+                                    elit in justo vel tincidunt semper. Mauris quisque magna ac integer convallis.
+                                    Tincidunt
+                                    facilisis ac platea pellentesque leo massa placerat turpis. Tempus molestie nullam
+                                    leo
+                                    ultrices in faucibus. </p>
+                            </div>
+                            <div class="news__date-post">
+                                <p>1 августа 2022 г.</p>
+                            </div>
+                            <div class="news__link-post">
+                                <a href="post.html">Подробнее <img src="assets/img/download-button.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__button">
+                    <button>Показать еще <img src="assets/img/download-button.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

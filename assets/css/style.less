@@ -94,12 +94,14 @@ button {
                         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
                         border-radius: 10px;
                         padding: 15px 62px 0 15px;
+                        z-index: -1;
 
                         &.active {
                             opacity: 1;
                             -webkit-transition: 0.3s all ease;
                             -o-transition: 0.3s all ease;
                             transition: 0.3s all ease;
+                            z-index: 2;
                         }
 
                         .dropdown__item {
@@ -214,6 +216,10 @@ button {
         border-radius: 30px;
         padding: 12px 0 11px 41px;
 
+        &.main__container {
+            width: 1052px;
+        }
+
         .breadcrumbs__item {
             margin-right: 28px;
 
@@ -260,7 +266,11 @@ button {
                     }
 
                     .month {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
                         align-items: center;
 
                         img {
@@ -290,6 +300,137 @@ button {
             }
         }
 
+        .main__chart {
+            border: 2px solid #ffffff;
+            border-radius: 30px;
+            padding: 21px 0 6px 26px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 38px;
+                left: 91px;
+                background-image: url(../img/line.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 924px;
+                height: 297px;
+            }
+
+            .chart__title {
+                margin-bottom: 18px;
+
+                p {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+            }
+
+            .chart__box {
+                position: relative;
+
+                .wrapper {
+                    margin-left: 50px;
+                    margin-right: 70px;
+
+                    .chart__subtitle {
+                        &:nth-child(2) {
+                            margin-left: 90px;
+                        }
+
+                        p {
+                            font-weight: 300;
+                        }
+                    }
+                }
+
+                .chart__inner {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+
+                    .item__balance {
+                        position: absolute;
+                        bottom: 46px;
+                        left: 25px;
+
+                        .chart__topup-balance {
+                            background: #ffffff;
+                            border-radius: 15px;
+                            padding: 3px 22px 3px 13px;
+
+                            p {
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 400;
+                                line-height: 20px;
+                                color: #000000;
+                            }
+                        }
+                    }
+
+                    .item__income {
+                        position: absolute;
+                        bottom: 89px;
+                        left: 21.5rem;
+
+                        .chart__income {
+                            background: #ffffff;
+                            border-radius: 15px;
+                            padding: 3px 10px 3px 13px;
+
+                            p {
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 400;
+                                line-height: 20px;
+                                color: #000000;
+                            }
+                        }
+                    }
+
+                    .item__income-second {
+                        position: absolute;
+                        bottom: 149px;
+                        right: 19.5rem;
+
+                        .chart__income-second {
+                            background: #ffffff;
+                            border-radius: 15px;
+                            padding: 3px 10px 3px 13px;
+
+                            p {
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 400;
+                                line-height: 20px;
+                                color: #000000;
+                            }
+                        }
+                    }
+
+                    .item__wait-income {
+                        position: absolute;
+                        top: -3px;
+                        right: 70px;
+
+                        .chart__wait-income {
+                            background: #ffffff;
+                            border-radius: 15px;
+                            padding: 3px 10px 3px 13px;
+
+                            p {
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 400;
+                                line-height: 20px;
+                                color: #000000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         .chart__info {
             margin-top: 11px;
             border: 2px solid #ffffff;
@@ -303,13 +444,19 @@ button {
             }
         }
     }
+}
+
+.aside__inner {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-top: 2rem;
 
     .chart__aside {
-        position: fixed;
+        position: absolute;
         right: 33px;
         width: 100%;
         max-width: 290px;
-        top: 13rem;
 
         .chart__balance {
             -webkit-filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.4));
@@ -318,31 +465,44 @@ button {
             border-radius: 20px;
             padding: 20px 12px 23px 17px;
 
-            button {
-                margin: 0 auto;
-                padding: 4px 6px 3px 23px;
-                font-size: 18px;
-                line-height: 28px;
-                background: -o-linear-gradient(
-                    355.52deg,
-                    #b852ff 0.63%,
-                    #5578e3 100%
-                );
-                background: linear-gradient(
-                    94.48deg,
-                    #b852ff 0.63%,
-                    #5578e3 100%
-                );
-                border-radius: 30px;
+            .chart__balance-buttons {
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
                 -webkit-box-align: center;
                 -ms-flex-align: center;
                 align-items: center;
 
-                img {
-                    margin-left: 19px;
+                a {
+                    padding: 4px 6px 3px 23px;
+                    font-size: 18px;
+                    line-height: 28px;
+                    background: -o-linear-gradient(
+                        355.52deg,
+                        #b852ff 0.63%,
+                        #5578e3 100%
+                    );
+                    background: linear-gradient(
+                        94.48deg,
+                        #b852ff 0.63%,
+                        #5578e3 100%
+                    );
+                    border-radius: 30px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    font-weight: 300;
+
+                    img {
+                        margin-left: 19px;
+                    }
                 }
             }
 
@@ -368,6 +528,9 @@ button {
                     margin-bottom: 10px;
 
                     .name {
+                        margin-right: 18px;
+                        width: 50%;
+
                         p {
                             font-weight: 500;
                             line-height: 25px;
@@ -376,6 +539,14 @@ button {
                     }
 
                     .current__number {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        width: 50%;
+                        -webkit-box-pack: start;
+                        -ms-flex-pack: start;
+                        justify-content: flex-start;
+
                         p {
                             font-size: 20px;
                             color: #000000;
@@ -383,6 +554,13 @@ button {
                     }
 
                     .stonk__number {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        width: 50%;
+                        -webkit-box-pack: start;
+                        -ms-flex-pack: start;
+                        justify-content: flex-start;
                         p {
                             color: #000;
                             display: -webkit-box;
@@ -412,6 +590,14 @@ button {
                     }
 
                     .invest__number {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        width: 50%;
+                        -webkit-box-pack: start;
+                        -ms-flex-pack: start;
+                        justify-content: flex-start;
+
                         p {
                             font-family: 'Montserrat', sans-serif;
                             font-weight: 500;
@@ -1331,6 +1517,20 @@ button {
     .post .post__main .post__text {
         width: 100%;
     }
+
+    .aside__inner {
+        position: relative;
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .aside__inner .chart__aside {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 20px auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1378,38 +1578,30 @@ button {
         margin: 41px 0 21px;
     }
 
-    .chart .chart__aside {
-        position: relative;
-        top: 0;
-        right: 0;
-        -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-        order: -1;
-        margin: 0 auto;
-    }
-
     .chart .main__chart {
         display: none;
     }
 
     .chart .wrapper {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 }
 
 @media (min-width: 1387px) and (max-width: 1554px) {
-    .container {
+    .main-container {
         width: 1052px;
         margin-left: 32px;
     }
 
-    .chart .chart__aside {
+    .aside__inner .chart__aside {
         right: 13px;
     }
 }
 
-@media (min-width: 1201px) and (max-width: 1386px) {
+@media (min-width: 1200px) and (max-width: 1386px) {
     .chart .wrapper {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -1464,6 +1656,20 @@ button {
 
     .news .news__inner {
         margin: 0 auto;
+    }
+
+    .aside__inner {
+        position: relative;
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .aside__inner .chart__aside {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 20px auto;
     }
 }
 
@@ -1548,6 +1754,7 @@ button {
     }
 
     .chart .wrapper {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -1582,7 +1789,10 @@ button {
     }
 
     .news .wrapper {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -1603,18 +1813,22 @@ button {
         margin: 41px 0 21px;
     }
 
-    .chart .chart__aside {
+    .chart .main__chart {
+        display: none;
+    }
+
+    .aside__inner {
+        position: relative;
+        top: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .aside__inner .chart__aside {
         position: relative;
         top: 0;
         right: 0;
-        -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-        order: -1;
-        margin: 0 auto;
-    }
-
-    .chart .main__chart {
-        display: none;
+        margin: 20px auto;
     }
 }
 
@@ -1734,6 +1948,7 @@ button {
     }
 
     .chart .wrapper {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -1764,7 +1979,10 @@ button {
     }
 
     .news .wrapper {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -1800,6 +2018,7 @@ button {
     }
 
     .chart .wrapper {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 }
@@ -1987,6 +2206,7 @@ button {
     }
 
     .chart .wrapper {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -2017,7 +2237,10 @@ button {
     }
 
     .news .wrapper {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -2219,6 +2442,7 @@ button {
     }
 
     .chart .wrapper {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -2277,6 +2501,7 @@ button {
     }
 
     .news .wrapper {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
@@ -2357,6 +2582,7 @@ button {
     }
 
     .news .wrapper {
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
 
